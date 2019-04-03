@@ -2,7 +2,7 @@
 
 Simple Console table generator.
 
-<code>
+```
 ConsoleTable partTable = new ConsoleTable();
 PropertyInfo[] partProperties = typeof(Part).GetProperties();
 partTable.Columns = (from property in partProperties
@@ -22,5 +22,6 @@ context.Parts.ToList().ForEach(part => {
 Console.WriteLine(partTable.ToString());
 Console.WriteLine("Press Any Key to Exit");
 Console.ReadKey();
-<code/>
+
+```
 
